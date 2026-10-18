@@ -30,3 +30,6 @@ jobs:
 
       - name: Check generated pstack harness trees
         run: node scripts/generate-pstack-harness-trees.mjs --check
+
+      - name: Test the DSH installer
+        run: node --test scripts/install-pstack-dsh.test.mjs
